@@ -1,0 +1,28 @@
+<%layout('layouts/boilerplate')%>
+    <h1>Add campground</h1>
+    <form action="/campground" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name">
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Enter location">
+        </div>
+        <div>
+            <label for="image">Image url</label>
+            <input type="text" name="image" id="image" placeholder="Enter image url">
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" placeholder="Enter price">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="Enter description">
+        </div>
+        <button>Add campground</button>
+    </form>
+    <div>
+        <a href="/campground">Back</a>
+    </div>

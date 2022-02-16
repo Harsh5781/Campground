@@ -1,0 +1,26 @@
+<%layout('layouts/boilerplate')%>
+    <h1>Edit</h1>
+    <form action="/campground/<%=camp.id%>?_method=PUT" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" value="<%=camp.name%>">
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Enter location" value="<%=camp.location%>">
+        </div>
+        <div>
+            <label for="image">Image url</label>
+            <input type="text" name="image" id="image" placeholder="Enter image url" value="<%=camp.image%>">
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" placeholder="Enter price" value="<%=camp.price%>">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="Enter description" value="<%=camp.description%>">
+        </div>
+        <button>Edit campground</button>
+    </form>
+    <a href="/campground/<%=camp.id%>">Back</a>

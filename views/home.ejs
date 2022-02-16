@@ -1,0 +1,10 @@
+<%layout('layouts/boilerplate')%>
+    <h1>Camps</h1>
+    <ul>
+        <%for(let i of camp){%>
+            <li>
+                <p><a href="/campground/<%=i.id%>"><%=i.name%></a></p>
+            </li>
+        <%}%>
+    </ul>
+    <a href="/campground/add">New campground</a>
